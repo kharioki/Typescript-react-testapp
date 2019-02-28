@@ -28,3 +28,17 @@ it('throws an error when the enthusiasm level is negative', () => {
     enzyme.shallow(<Hello name="Daniel" enthusiasmLevel={-1} />);
   }).toThrow();
 });
+
+it('simulate a - button click', () => {
+  const hello = enzyme.shallow(<Hello name="Daniel" enthusiasmLevel={2} />);
+  hello.find('#minus').simulate('click');
+  // const button = hello.find('#minus').simulate('click');
+  // expect(button).toHaveBeenCalled();
+});
+
+it('simulate a + button click', () => {
+  const hello = enzyme.shallow(<Hello name="Daniel" enthusiasmLevel={2} />);
+  hello.find('#adder').simulate('click');
+  // const button = hello.find('#adder').simulate('click');
+  // expect(button).toHaveBeenCalled();
+});
