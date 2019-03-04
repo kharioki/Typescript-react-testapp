@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import './Hello.css';
+import Header from './styles/Header';
+import SickButton from './styles/SickButton';
 
 export interface Props {
   name: String;
@@ -15,19 +16,19 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: Props) {
   }
 
   return (
-    <div className="hello">
+    <Header>
       <div className="greeting">
         Hello {name + getExclamationMarks(enthusiasmLevel)}
       </div>
       <div>
-        <button id="minus" onClick={onDecrement}>
+        <SickButton id="minus" onClick={onDecrement}>
           -
-        </button>
-        <button id="adder" onClick={onIncrement}>
+        </SickButton>
+        <SickButton id="adder" onClick={onIncrement}>
           +
-        </button>
+        </SickButton>
       </div>
-    </div>
+    </Header>
   );
 }
 

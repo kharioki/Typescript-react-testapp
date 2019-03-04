@@ -4,11 +4,14 @@
   "private": true,
   "dependencies": {
     "@types/react-redux": "^7.0.1",
+    "@types/styled-components": "^4.0.3",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-redux": "^6.0.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts-ts": "^4.0.8",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "styled-components": "^4.1.3"
   },
   "scripts": {
     "start": "react-scripts-ts start",
